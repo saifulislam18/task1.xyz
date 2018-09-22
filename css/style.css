@@ -1,0 +1,382 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+}
+.left-content{
+	width: 25%;
+	height:100%;
+	background: #DDE2EB;
+	float: left;
+	box-shadow: 0px 0px 0px 0px #333;
+	position: relative;
+	margin: 0;
+}
+.left-top{
+	width: 99%;
+	height: 30px;
+	border: 1px solid #ccc;
+	background-image: linear-gradient(to top right, #D7D7D7 , #E6E6E6);
+	margin-top: 3px;
+	box-shadow: 0 -5px 5px -4px #333;
+}
+.left-top-title{
+	width: 90%;
+	float: left;
+}
+.left-top-title h2{
+	color: #473E3A;
+	font-size: 20px;
+	margin: 5px 0 0 30px;
+	font-weight: bold;
+	display: inline;
+}
+#fieltered{
+	display: inline;
+	float: right;
+}
+#fieltered p{
+    margin: 5px 10px 0 0;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid #5C6987;
+    border-radius: 15px;
+    background-image: linear-gradient(to top right, #5C69AC , #5C6978);
+    color: #fff;
+    font-weight:bold;
+}
+.left-top-add{
+	width: 10%;
+	float: right;
+}
+.left-top-add img{
+	cursor: pointer;
+}
+
+.list-left{
+	display: inline;
+	width: 85%;
+	float: left;
+}
+.list-right{
+	display: inline;
+	width: 15%;
+	float: right;
+}
+.list-right img{
+	padding-left: 5px;
+}
+.left-hand-pan{
+	list-style: none;
+	margin-left: -40px;
+	margin-top:auto;
+	position: relative;
+    overflow: hidden;
+}
+.left-hand-pan li{
+	width: 97.5%;
+	height: 20px;
+	border: 1px solid #ccc;
+	background:#ffffff;
+	padding: 3px;		
+}
+.left-hand-pan li:hover{
+	background:#454545;
+	color: #fff;	
+}
+.list-active{
+	background:#454545;
+	/*color: #fff;*/
+}
+.left-hand-pan li p{
+	margin-left: 5px;
+	display: inline;
+	font-weight: bold;	
+}
+.left-hand-pan li a{
+	cursor: pointer;
+}
+
+.search-form {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	background-image: linear-gradient(to top right, #1D1D1D , #5B5B5B);
+	color: #fff;
+	font-weight: bold;
+}
+#search {
+	position: absolute;
+    border-radius: 25px;
+    width: 75%;
+    margin-left: 5px;
+}
+.form-group span {
+    position: relative;
+    margin-top: 5px;
+    margin-right: 5%;
+    float: right;
+}
+
+.right-content{
+	width: 75%;
+	background: #fff;
+	float: right;
+}
+.right-top{
+	width: 100%;
+	height: 30px;
+	border: 1px solid #ccc;
+	background-image: linear-gradient(to top right, #68696A , #98999C);
+	margin-top: 3px;
+	box-shadow: 0 -5px 5px -4px #333;
+}
+.tabs {
+	list-style: none;
+	margin-left: -30px;
+	margin-top: 10px;
+	
+
+}
+.list-item{
+	display: inline;
+	border: 1px solid #C6C6C6;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 2px;
+	background-color: #B9B9B9; 
+}
+.list-item a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #473E3A;
+
+}
+.active{
+	display: inline;
+	border: 1px solid #C6C6C6;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 2px;
+	background-color: #fff; 
+}
+.active a{
+	padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #473E3A;
+}	
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}	
+
+
+/*Modal*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 992px)  {
+	.left-top-title h2{
+		margin: 5px 0 0 10px;
+	}
+	#search {
+	    width: 70%;
+	    margin-left: 5px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px)  {
+	.left-top-title{
+		width: 85%;
+	}
+	.left-top-title h2 {
+    	font-size: 14px;
+    	margin: 0;
+	}
+	#fieltered p {
+	    font-size: 12px;
+	    margin-top: 5px;
+	}
+	.left-top-add{
+		width: 15%;
+	}
+
+	.list-left{
+		width: 75%;
+	}
+	.list-right{
+		width: 25%;
+	}
+	.search-form label{
+		font-size: 14px;
+	}
+	#search {
+	    width: 65%;	
+	}
+	.form-group span {
+	    margin-right: 6%;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 600px)  {
+	.left-content{
+		width: 30%;
+	}
+	.right-content{
+		width: 70%;
+	}
+	.left-top-title{
+		width: 85%;
+	}
+	.left-top-title h2 {
+    	font-size: 12px;
+    	margin: 0;
+	}
+	#fieltered p {
+	    font-size: 11px;
+	    margin: 5px 0 0 0;
+	}
+	.left-top-add{
+		width: 15%;
+	}
+
+	.list-left{
+		width: 65%;
+	}
+	.list-right{
+		width: 35%;
+	}
+	.search-form label{
+		font-size: 14px;
+	}
+	#search {
+	    width: 65%;	
+	}
+	.form-group span {
+	    margin-right: 6%;
+	}
+}
+
+@media only screen and (max-width: 599px) and (min-width: 420px)  {
+	.left-content{
+		width: 40%;
+	}
+	.right-content{
+		width: 60%;
+	}
+	.left-top-title{
+		width: 85%;
+	}
+	.left-top-title h2 {
+    	font-size: 12px;
+    	margin: 0;
+	}
+	#fieltered p {
+	    font-size: 11px;
+	    margin: 5px 0 0 0;
+	}
+	.left-top-add{
+		width: 15%;
+	}
+
+	.list-left{
+		width: 65%;
+	}
+	.list-right{
+		width: 35%;
+	}
+	.search-form label{
+		font-size: 14px;
+	}
+	#search {
+	    width: 65%;	
+	}
+	.form-group span {
+	    margin-right: 6%;
+	}
+}
+@media only screen and (max-width: 420px){
+	.left-content{
+		width: 45%;
+	}
+	.right-content{
+		width: 55%;
+	}
+	.left-top-title{
+		width: 85%;
+	}
+	.left-top-title h2 {
+    	font-size: 12px;
+    	margin: 0;
+	}
+	#fieltered p {
+	    font-size: 11px;
+	    margin: 5px 0 0 0;
+	}
+	.left-top-add{
+		width: 15%;
+	}
+
+	.list-left{
+		width: 65%;
+	}
+	.list-right{
+		width: 35%;
+	}
+	.search-form label{
+		font-size: 14px;
+	}
+	#search {
+	    width: 55%;	
+	}
+	.form-group span {
+	    margin-right: 6%;
+	}
+}

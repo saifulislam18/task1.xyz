@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- left-side-pan start-->
+
+		<div class="left-content">
+			
+			<div class="left-top">
+				<div class="left-top-title" id="">
+					<h2>Pages</h2>
+					<div id="fieltered">
+						
+					</div>
+				</div>
+				<div class="left-top-add">
+					<img src="images/plus.png" alt="" onclick="modalOpen()">
+				</div>
+			</div>
+			
+			<!-- list item start	 -->
+			
+			<div class="content-list">
+				
+				<ul id="sortable" class="left-hand-pan">
+
+				</ul>
+
+			</div>
+
+			<!-- list item end-->
+
+			<div class="search-form">
+				<div class="form-group">
+					<label for="search">Filter : </label>
+					<input type="text" onkeyup="fielteredSearch()" id="search">
+					<span onclick="emptyInput()" id="emptyBtn">
+						
+					</span>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- left-side-pan end -->
+
+		<!-- right-side-pan start -->
+
+		<div class="right-content">
+			<div class="right-top">
+				<ul class="tabs">
+					<li class="active" onclick="tabOption('name','about')" id="name"><a href="#">Name</a></li>
+					<li class="list-item" onclick="tabOption('about','name')" id="about"> <a href="#">About</a></li>
+				</ul>
+			</div>
+			<div class="tab-content" id="name-content" style="display: block;">
+
+			</div>
+			<div class="tab-content" id="about-content">
+				
+			</div>
+		</div>
+
+		<!-- left-side-pan end -->
+
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <h4>Personal Information</h4>
+		    <label for="c_name">Name:</label><input type="text" id="c_name">
+		    <label for="c_age">Age:</label><input type="number" min="0" id="c_age">
+		    <h4>About Me</h4>
+		    <textarea id="c_about" cols="30" rows="10"></textarea><br>
+		    <button onclick="saveData()">Save</button>
+		  </div>
+
+		</div>
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
